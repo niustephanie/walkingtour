@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Tour of Stanford Soils</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,
+	maximum-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/png" href="data:image/png;base64,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"/>
+</head>
+
+<body>
+<div class="intro">
+
+<div class="spacer">
+</div>
+<div class="spacer">
+</div>
+
+<h1>How the Soil Crumbles</h1>
+</div>
+
+<div class="spacer">
+</div>
+<h1>Introduction</h1>
+<p>Soil is ubiquitous; every day we walk over dozens of different soil profiles and types, and pass through the different plants, animals, and rocks that contribute to our soil without noticing. It can seem like the only people who care about soil types are earth scientists and farmers. However, soil contains valuable information about the environment, if we just know how to read it. This guided tour of the soils in Stanford's southern campus aims to provide a sense of what soil can teach us. <br/><br/>
+
+With that, let's get going!<br/><br/>
+
+<em>Warning: this walking tour involves getting at least one of your hands a bit dirty. <br/><br/></em>
+
+This tour doesn't require any materials (the dirt around us is plentiful and full of information!). However, there are a few optional materials that we'll use for certain parts of the tour, listed below.<br/><br/>
+
+Optional Materials:
+<ul>
+<li>Soil color frame <a href="images/SoilGuide.pdf" target="_blank">(Print Here)</a></li>
+<li>HP Reveal app <a href="https://studio.hpreveal.com/landing" target="_blank">(Download Here)</a></li>
+<li>Bottled water</li>
+</ul></p>
+
+<h1>Levin Field</h1>
+
+<p>Our tour starts at Levin Field, the green patch of grass next to the Flomo basketball courts. 
+
+<img src="images/levin.png"></img>
+
+First things' first: find yourself a nice digging stick. We'll be doing a lot of digging on this tour, so get a long, sturdy twig, like this one:
+
+<img src="images/stick1.jpg"></img>
+
+Or this one: 
+
+<img src="images/stick2.jpg"></img>
+
+Let's start by looking at the soil on the grassy side of the walkway. Dig into the dirt until you get enough dirt to pinch in your hand. 
+
+<img src="images/levindig.jpg"></img>
+
+Texture is one of the primary ways of quickly identifying soil type. Feel the dirt in your hand. Rub your fingers together- does the soil stick to itself and form a short ribbon? <br/><br/>
+
+This dirt should feel rich and fluffy and be dark in color. These are all signs that it is loam: a soil compound that is rich in nutrients. Think of loam as something similar to potting soil you would buy from Home Depot- it's fluffy and nutrient-rich.</p>
+
+<div class="iframe-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/RaFSZzSDTAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+<p>However, this soil should also form small ribbons and stick to itself when you roll it between your fingers. It should feel the tiniest bit sticky on your hand. This is a sign that it contains clay: the type of soil with the smallest particles, which stick together tightly and don't let much water pass through. <br/><br/>
+
+The soil in this field is most likely clay-loam: mostly loam, with a bit of clay content. <br/>
+If you want to read a bit more about different soil types, check out this <a href="https://www.vaderstad.com/en/know-how/basic-agronomy/soil-basics/characteristics-of-different-soil-types/" target="_blank">basic guide.</a><br/><br/>
+
+Now let's cross over to the other side of the walkway, near the pines tree. Walk near one of the pine trees and dig up some of the soil.<br/><br/>
+
+<img src="images/levinpines1.jpg"></img>
+
+Immediately, what do you notice that's different? How does the soil look, feel, and even sound?<br/><br/>
+
+<img src="images/levinpines2.jpg"></img>
+This dirt is much lighter in color- an indicator that there's less organic matter (rotting leaves, dead bits of plant matter, etc.). Rub it between your fingers. It should feel a bit gritty and not clump up at all the way the clay-loam did.<br/><br/> 
+
+This soil is far more sandy: with larger, grittier particles, sandy soil lets water pass through very quickly and does not hold much moisture. This makes sense, given what's growing here; pine trees actually prefer drier soil, so a sandy soil that lets water through is perfect for them.<br/><br/>
+
+Why are two patches of earth so close to each other so different in soil? The answer may seem obvious: it depends on what grows there. Pine trees prefer well-drained, sandy soil. Green meadow grass, meanwhile, prefers nutrient-dense loam. However, the loam isn't necessarily naturally-occuring. The loam you dug on the grassy side may have come with the grass, if the lawn was created using mats of existing grass. It could also be well-fertilized. <br/><br/>
+
+We'll see more ways that surroundings can impact soil type. Before you leave, don't forget to replace the soil that you've dug! Exposed soil is more likely to erode, and holes in the ground (even small ones) can hurt small animals that run over them. <br/><br/>
+
+Grab your stick and let's get going. </p>
+
+<h1>Mayfield Ave</h1>
+<p>Head back toward Mayfield avenue and walk toward Flomo. 
+
+<img src="images/mayfield.jpg"></img>
+
+We're headed toward the entrance to Lake Lag, so we'll go down the length of Mayfield. <br/><br/>
+As you walk, look at the base of the bloodleaf trees (on your right). 
+
+<img src="images/bloodleaf.png"></img>
+
+You may notice that the soil here looks really dry and it hardened into large chunks, like this:
+
+<img src="images/clay.jpg"></img>
+
+The way the soil is sticking together like this suggests that it has high clay content. Just like a ball of play-dough drying if it's left out too long, clay-y soil will dry into large clumps. If you crumble one of these blocks in your fingers, the dirt should feel very fine, almost like a dust.</p>
+
+<div class="iframe-container"><iframe src="https://www.youtube.com/embed/JNOlpqDYXKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>As you walk under the shade of some trees, look again at the bloodleaf trees. Depending on the time of day, they may be in the shade too. 
+
+<img src="images/bloodleaf_shade.png"></img>
+
+Look at the soil here. It should be darker, much more similar to the dirt you found in the grass before. <br/><br/>
+
+Why do you think this is?<br/><br/>
+
+We know that loam contains more organic matter. These bloodleafs, even though they're the same as their neighbors just a few feet away, are underneath pines that continually shed their needles. It's likely that all this plant matter enriches the soil here more than the soil you saw just a minute ago.<br/><br/>
+
+Pretty cool!<br/><br/>
+
+Keep walking until Mayfield intersection wtih Capistrano; cross the street here. <br/>
+
+Walk until you see a little break in the bushes, behind the cream-colored building. 
+
+<img src="images/bechtel.png"></img>
+
+Walk through until you see a bench. 
+
+<img src="images/bench.jpg"></img>
+
+Dig the soil right in front of the bench. Try the texture test we did earlier, rolling it in your fingers. If the soil forms little worm shapes and can hold it without breaking, it likely has clay content.
+
+<img src="images/worm.jpg"  ></img>
+
+As you can see, this soil has a pretty high clay-content; this would be a silty clay.</p>
+
+
+<h1>Lake Lag</h1>
+
+<p>We'll continue down Mayfield until we reach Lake Lag.
+
+<img src="images/lag.png"></img>
+
+Take the short foot path behind this sign, up to the fire pit. 
+<img src="images/lagsign.jpg"></img>
+
+If it's a hot day, here is a good place to rest! There are a few benches in the shade.<br/><br/>
+
+Now's a good time to point out of the wildlife that dirt can show us. In Levin field and now in the lake area, you may have noticed several piles of dirt laying around, like these:
+
+<img src="images/piles.jpg"></img>
+
+Or holes, like these:
+
+<img src="images/holes.jpg"></img>
+
+These are signs of gophers and ground squirrels. The piles are the entrances to gopher tunnels that have been plugged up; gophers seal their tunnel entrances so they can live underground. Meanwhile, ground squirrels keep the entrances to their burrows open, resulting in the large holes you see around.<br/><br/>
+
+If you stay a while, you might see a ground squirrel go into its home. <br/><br/>
+
+If you don't have time for that, here's a video of one I spotted: </p>
+
+<div class="iframe-container"><iframe src="https://www.youtube.com/embed/dAM5TD5Vfxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+<p>There's an interesting type of soil at the edge of this lake. To find it, continue down the lake path on the left fork for a little bit.</p>
+
+<img src="images/leftfork.png"></img>
+
+<p>Find this little concrete ledge and sit down.</p>
+
+<img src="images/concrete.png"></img>
+
+<p>Right where your feet land, dig a little with your stick. The dirt should be dry and hard but dark underneath. What kind of dirt do you think this is?</p>
+
+<img src="images/lakedirt.jpg" ></img>
+
+<p>Sometimes it can help to wet dirt to get a better sense of what type it is. If you have water with you, try pouring a little bit into the soil and rubbing it between your fingers. </p>
+
+<img src="images/lakedirtwet.jpg" ></img>
+
+<p>This should feel familiar. It's clay, with a bit of sand. <br/><br/>
+
+
+If it's nice out, now would be a good time to take in the lake view. </p>
+
+<img src="images/lakeview.png"></img>
+
+<p>Since this is such a scenic spot, now seems like a good time to give you a new tool for describing soils: Munsell Soil charts. 
+</p>
+
+
+<h1>Beyond "Brown"</h1>
+
+<p>How would you describe the color of this soil? While it may be tempting to just call it "brown,” there is actually a far more precise way to describe its color.</p>
+
+<img src="https://eos.org/wp-content/uploads/2017/06/Soil-profiles.jpg"></img>
+
+<p>Scientists, archaeologists, and even carpet manufacturers use something called the Munsell System to describe soil colors. The Munsell System measures hue (color), value (lightness and darkness), and chroma (color intensity) of a soil and translates it to a unique code that can universally identify the soil color. Knowing the Munsell notation of a bit of soil can help scientists understand its composition, help archaeologists track changes in soil profile during an excavation, and even help carpet manufacturers match the exact shade of outside dirt so that dirty footprints are less visible indoors. <br/><br/>
+
+You can easily find the Munsell code of an area of dirt by placing a Munsell card over the dirt and matching the color up to the card, like a paint chip. Let's try Munsell-ing this dirt with some digital help. Follow the directions below. <br/><br/></p>
+
+<ol>
+<li>Open the HP Reveal App</li>
+<li>Clear a spot on the ground so that only dirt is visible</li>
+<li>Place the reference card given to you over this spot so that it forms an upper left corner. </li>
+<li>Using HP Reveal, scan the reference card. An image of a Munsell card should appear</li>
+<li>Find the color swatch that matches the dirt showing through the circular holes. Note the row and column numbers of your dirt- this is your Munsell code</li>
+</ol>
+
+<p>
+Munsell colors help not only by creating a universal standard for soil color, but by giving information about the soil content (and about iron minerals in particular). For example, dirt that matches 10YR 8/6 ("yellow") is known to have bits of geothite about 1-2 microns wide. Meanwhile, soil matching 10YR 8/3 ("very pale brown") is known to have bits of gypsum. <br/><br/>
+This information is from <a href="https://www.envirothonpa.org/documents/munsellcharts.pdf" target="_blank">this pdf</a> on Munsell types, which has more detailed information on mineral content.</p>
+<img src="images/IronMinerals.png" alt="labeled diagram of iron minerals in munsell types"></img>
+
+<h1>The Knoll Path</h1>
+
+<p>Let's keep moving toward our last stop. Go back to the sign you passed earlier and continue striaght to go toward the knoll.
+
+<img src="images/knoll.jpg"></img>
+
+As you walk, notice that the dirt on your right is buried in dead leaves. What do you think the dirt underneath will be like? You can dig just to check.
+
+<img src="images/humus.jpg"></img>
+
+Rich, brown, fluffy; better than Home Depot. 
+
+Keep walking until you see this sign, and take the right fork. 
+
+<img src="images/rightfork.png" ></img>
+
+When you see signs for the Knoll, keep going straight:
+
+<img src="images/knoll.png"></img>
+
+Until you see this little paved path. 
+
+<img src="images/path.png"></img>
+
+If you follow the path for a little while, you'll see this bad boy on your right. 
+
+<img src="images/roots.png"></img>
+
+At this point you know what clay feels like versus loam versus sand versus silt. You know that pines like dry dirt and grass likes a nutrient-rich mix, that dead leaves mean dark dirt, that big clumps of dried dirt can be rolled into worms if they're wet.<br/><br/>
+
+But what happened here? It looks like a pine stump with clumps of clay-like dirt. Not what we'd expect from pines.<br/><br/>
+
+At this point you know enough about soil types and plant like to come up with your own hypotheses. Something to think about as you walk back to Levin field.<br/><br/>
+
+Thus concludes our soil tour of southern Stanford! If you continue straight down the path and turn left, you'll make your way to Campus Drive, which you can follow back to Mayfield and Levin field. As you walk, listen for the rustling of ground squirrels scurrying into their burrows. And feel free to Munsell any interesting soil you pass on your way back. :)</p>
+
+<h1>Thanks for walking!</h1>
+
+
+</body>
+</html>
+
+<!-- Images from: https://www.lushlawn.com/lawn-care-services/soil-treatment-services/
+http://m.espacepourlavie.ca/en/soil-structure-->
