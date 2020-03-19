@@ -39,7 +39,7 @@ h1 {
 }
 
 .intro {
-	background-image: url("images/cover.png");
+	background-image: url("images/cover-min.png");
 	height: 100%; 
 	background-size: cover
 }
